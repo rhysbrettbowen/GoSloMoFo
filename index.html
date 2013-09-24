@@ -1,0 +1,14 @@
+<html>
+<script src="goslomofo.js"></script>
+<body>
+<script>
+var go = goslomofo(function() {
+	console.log(+(new Date()));
+});
+go.start();
+setTimeout(function() {
+	go.stop();
+}, 20000);
+</script>
+</body>
+</html>
