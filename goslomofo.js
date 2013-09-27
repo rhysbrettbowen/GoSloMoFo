@@ -22,10 +22,7 @@ var goslomofo = function(fn, fr) {
 		}
 		if (last) {
 			while (+(new Date()) - last < ms) {
-				var div = document.createElement('div');
-				document.body.appendChild(div);
-				window.getComputedStyle(div).height;
-				document.body.removeChild(div);
+				var sqr = Math.sqrt(Math.random());
 			}
 		}
 		last = new Date();
