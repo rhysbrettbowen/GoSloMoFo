@@ -1,5 +1,33 @@
 <html>
+<head>
 <script src="goslomofo.js"></script>
+<style>
+@-webkit-keyframes newshiv {
+    from {background-color: #999;
+    top:0;
+  left:0;}
+    to {background-color: #30353A;
+    top:300px;
+  left:0;}
+}
+@keyframes newshiv {
+    from {background-color: #999;
+    top:0;
+  left:0;}
+    to {background-color: #30353A;
+    top:300px;
+  left:0;}
+}
+.animate {
+-webkit-animation: newshiv 4s 100 linear;
+  width:100px;
+  height: 100px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+</style>
+</head>
 <body>
 <script>
 var go = goslomofo(function() {
@@ -8,7 +36,8 @@ var go = goslomofo(function() {
 go.start();
 setTimeout(function() {
 	go.stop();
-}, 20000);
+}, 2000);
 </script>
+<div class="animate"></div>
 </body>
 </html>
